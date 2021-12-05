@@ -38,7 +38,8 @@ def lista_eventos(request):
 def evento(request):
     id_evento = request.GET.get('id')
     dados = {}
-    dados['evento'] = Evento.objects.get(id=id_evento)
+    if id_evento:
+        dados['evento'] = Evento.objects.get(id=id_evento)
     return render(request, 'evento.html', dados)
 
 @login_required(login_url='/login/')
@@ -59,9 +60,9 @@ def submit_evento(request):
                 evento.descricao = descricao
                 evento.save()
             #Evento.objects.filter(id=id_evento).update(titulo=titulo,
-             #                                          data_evento=data_evento,
-              #                                         local=local,
-              #                                         descricao=descricao,)
+                                                      # data_evento=data_evento,
+                                                      # local=local,
+                                                      # descricao=descricao,)
         else:
             Evento.objects.create(titulo=titulo,
                               data_evento=data_evento,

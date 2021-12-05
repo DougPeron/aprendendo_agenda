@@ -1,18 +1,30 @@
+{% load static %}
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Agenda</title>
+    <link rel="stylesheet" href="{% static '1css.css'%}">
 </head>
-<body>
-  <h1>Login</h1>
-  <form action="submit" method="POST">{% csrf_token %}
-    <div align="center">
-        <label>Usuário:</label>
-        <input type="text" name="username">
-        <label>Password:</label>
-        <input type="password" name="password">
-        <button type="submit">Entrar</button>
+<body class="body">
+
+  <form class="container" action="submit" method="POST">{% csrf_token %}
+    <div class="box">
+        <h3 align="center">ACESSO</h3>
+        <div align="center">
+            <label>Usuário:</label>
+            <input style="margin-botton: 15px" type="text" name="username">
+        </div>
+        <br><br>
+        <div align="center">
+            <label style="margin-right: 10px">Senha:</label>
+            <input type="password" name="password">
+        </div>
+        <br><br>
+        <div align="center">
+            <button style="padding-left:91px ;padding-right: 91px;" stype="submit">Entrar</button>
+        </div>
     </div>
   </form>
     {% for message in messages %}

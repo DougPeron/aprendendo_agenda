@@ -1,8 +1,9 @@
-
+{% load static %}
 <meta charset="UTF-8">
 <title>Agenda</title>
-<div align="right">
-    <a href="/logout">Logout</a>
-</div>
-<h1>Agenda</h1>
+<link rel="stylesheet" href="{% static '1css.css'%}">
 
+<div style="display: inline-block"><h1>Agenda</h1></div>
+<div align="right" style="float: right; display: inline-block; margin-right: 15px;">
+    <a href="/logout"><img src="/static/exit.png"></a>
+</div>

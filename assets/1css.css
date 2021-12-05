@@ -1,0 +1,71 @@
+.agend{
+margin-left: 20px;
+margin-top: 0px;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+.container {
+width: 100vw;
+height: 100vh;
+background-image: url(/static/back-login.jpg);
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.box {
+width: 300px;
+height: 250px;
+background-image: url(/static/login-back.png);
+}
+
+body {
+height: 700px;
+margin: 0px;
+font-family: arial
+}
+
+.table{
+border-collapse: collapse;
+border-spacing: 0;
+display: table;
+overflow-x: auto;
+white-space: nowrap;
+}
+
+.line{
+font-size: 12px;
+width: 200px;
+vertical-align: middle;
+text-align: center;
+padding: 15px 5px;
+border-right: 2px solid #d0d0d0;
+border-bottom: 2px solid #d0d0d0;
+border-left: 2px solid #d0d0d0;
+}
+
+.ota{
+font-size: 18px;
+width: 100px;
+vertical-align: middle;
+text-align: center;
+padding: 15px 5px;
+border-right: 2px solid #d0d0d0;
+border-bottom: 2px solid #d0d0d0;
+border-left: 2px solid #d0d0d0;
+}
+
+.icon{
+background-image: url(/static/exit.png);
+}
+
+.footer{
+float: bottom;
+font-size: 8px;
+}
+
+.button{
+margin-left: 1cm;
+}
