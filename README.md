@@ -12,3 +12,5 @@ Criação das funções e tela de altenticação de usuario.
 Criação da pagina de incerção de evendo.
 # Commit 6
 Adicionada funções para deletar e alterar eventos.
+# Commit 7
+adicionado CSS e imagens de icones.
